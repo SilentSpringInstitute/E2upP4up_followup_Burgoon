@@ -76,5 +76,32 @@ Bethsaida Cardona<br>
 Alexandre Borrel<br>
 Jennifer E. Kay<br>
 Silent Spring Institute, 320 Nevada St. Newton, MA 02460<br>
-*Corresponding author, Rudel@SilentSpring.org
+*Corresponding author, Rudel@SilentSpring.org<br>
+
+<br>
+
+### <b>References</b>
+- Autrup H, Barile FA, Berry SC, Blaauboer BJ, Boobis A, Bolt H, et al. 2020. Human exposure to synthetic endocrine disrupting chemicals (s-edcs) is generally negligible as compared to natural compounds with higher or comparable endocrine activity. How to evaluate the risk of the s-edcs? J Toxicol Environ Health A 83:485-494.
+- Cardona B, Rudel RA. 2020. Us epa's regulatory pesticide evaluations need clearer guidelines for considering mammary gland tumors and other mammary gland effects. Mol Cell Endocrinol:110927.
+- Cardona B, Rudel RA. 2021. Application of an in vitro assay to identify chemicals that increase estradiol and progesterone synthesis and are potential breast cancer risk factors. Environ Health Perspect 129:77003.
+- Carmina E, Stanczyk FZ, Lobo RA. 2019. Chapter 34 - evaluation of hormonal status. In: Yen and jaffe's reproductive endocrinology (eighth edition),  (Strauss JF, Barbieri RL, eds). Philadelphia:Elsevier, 887-915.e884.
+- Chun TY, Gregg D, Sarkar DK, Gorski J. 1998. Differential regulation by estrogens of growth and prolactin synthesis in pituitary cells suggests that only a small pool of estrogen receptors is required for growth. Proc Natl Acad Sci U S A 95:2325-2330.
+- Council NR. 2008. Phthalates and cumulative risk assessment: The tasks ahead. Washington, DC:The National Academies Press.
+- EPA U. 2011. Steroidogenesis (human cell line - h295r) ocspp guideline 890.1550. (Standard Evaluation Procedure). Washington, DC:US EPA 
+- Filer DL, Kothiya P, Setzer RW, Judson RS, Martin MT. 2017. Tcpl: The toxcast pipeline for high-throughput screening data. Bioinformatics 33:618-620.
+- Gore AC, Chappell VA, Fenton SE, Flaws JA, Nadal A, Prins GS, et al. 2015. Edc-2: The endocrine society's second scientific statement on endocrine-disrupting chemicals. Endocrine Reviews 36:E1-E150.
+- Haggard DE, Karmaus AL, Martin MT, Judson RS, Setzer RW, Paul Friedman K. 2018. High-throughput h295r steroidogenesis assay: Utility as an alternative and a statistical approach to characterize effects on steroidogenesis. Toxicol Sci 162:509-534.
+- Hecker M, Hollert H, Cooper R, Vinggaard AM, Akahori Y, Murphy M, et al. 2011. The oecd validation program of the h295r steroidogenesis assay: Phase 3. Final inter-laboratory validation study. Environ Sci Pollut Res Int 18:503-515.
+- Howdeshell KL, Rider CV, Wilson VS, Furr JR, Lambright CR, Gray LE, Jr. 2015. Dose addition models based on biologically relevant reductions in fetal testosterone accurately predict postnatal reproductive tract alterations by a phthalate mixture in rats. Toxicol Sci 148:488-502.
+- Howdeshell KL, Hotchkiss AK, Gray LE, Jr. 2017. Cumulative effects of antiandrogenic chemical mixtures and their relevance to human health risk assessment. Int J Hyg Environ Health 220:179-188.
+- Karmaus AL, Toole CM, Filer DL, Lewis KC, Martin MT. 2016. High-throughput screening of chemical effects on steroidogenesis using h295r human adrenocortical carcinoma cells. Toxicol Sci 150:323-332.
+- Kortenkamp A. 2020. Which chemicals should be grouped together for mixture risk assessments of male reproductive disorders? Mol Cell Endocrinol 499:110581.
+- Makris SL. 2011. Current assessment of the effects of environmental chemicals on the mammary gland in guideline rodent studies by the u.S. Environmental protection agency (u.S. Epa), organisation for economic co-operation and development (oecd), and national toxicology program (ntp). Environmental health perspectives 119:1047-1052.
+- Martin O, Scholze M, Ermler S, McPhie J, Bopp SK, Kienzler A, et al. 2021. Ten years of research on synergisms and antagonisms in chemical mixtures: A systematic review and quantitative reappraisal of mixture studies. Environ Int 146:106206.
+- Michaels D. 2020. The triumph of doubt: Dark money and the science of deception:Oxford University Press.
+- OECD. 2011. Test no. 456: H295r steroidogenesis assay.
+- Rudel RA, Fenton SE, Ackerman JM, Euling SY, Makris SL. 2011. Environmental exposures and mammary gland development: State of the science, public health implications, and research recommendations. Environmental health perspectives 119:1053-1061.
+- Simpson ER, Misso M, Hewitt KN, Hill RA, Boon WC, Jones ME, et al. 2005. Estrogen--the good, the bad, and the unexpected. Endocr Rev 26:322-330.
+- Tucker DK, Hayes Bouknight S, Brar SS, Kissling GE, Fenton SE. 2018. Evaluation of prenatal exposure to bisphenol analogues on development and long-term health of the mammary gland in female mice. Environ Health Perspect 126:087003.
+
 
