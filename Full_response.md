@@ -70,7 +70,7 @@ We appreciate support from Drs. R.W. Setzer (emeritus US EPA) and K. Paul-Friedm
 ### <u><b>Conflicts/Funding:</u></b>
 This work was funded by the by the U.S. National Institutes of Health/National Institute of Environmental Health Sciences Breast Cancer and Environment Research Program (U01ES026130), the California Breast Cancer Research Program (awards 21UB-8012 and 21UB-8100), the Cedar Tree Foundation, and charitable gifts to the Silent Spring Institute. All authors are or have been employed at the Silent Spring Institute, a scientific research organization dedicated to studying environmental factors in women’s health. The institute is a 501(c)3 public charity funded by federal grants and contracts, foundation grants, and private donations, including from breast cancer organizations. Study funders had no role in study design; in the collection, analysis and interpretation of data; in the writing of the report; and in the decision to submit the article for publication.<br>
 
-Signature block<br>
+<b>Signature block</b><br>
 Ruthann A. Rudel*<br>
 Bethsaida Cardona<br>
 Alexandre Borrel<br>
