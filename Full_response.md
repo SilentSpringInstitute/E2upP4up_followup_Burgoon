@@ -9,6 +9,7 @@ In order to reach their conclusion about false positives, Burgoon and Borgert ma
 Second, Burgoon applied an arbitrary biological constraint within their data analysis, requiring a hormone concentration to increase above a threshold that they selected for the response to be positive.<br>
 
 Neither the pooling of controls nor the application of a hormone concentration threshold are disclosed in their letter, but they are described in their GitHub code (https://github.com/DataSciBurgoon/toxcast_steroidogenesis/). <br>
+
 We provide additional detail about these and several other points from their letter below, and details of our work can be found in our GitHub files (https://github.com/SilentSpringInstitute/E2upP4up_followup_Burgoon). <br>
 
 ### <i> Normalize to concurrent controls </i>
@@ -44,44 +45,35 @@ While it is true most chemicals have a small sampling size in relying on duplica
 
 ### <i>Source of the data</i>
 Burgoon and Borgert write that we did not base our analysis on the US EPA’s ToxCast Database (invitroDB3.3), but this is incorrect. We used the raw data from the ToxCast Database, however, as we make clear in our paper, we chose to use the ANOVA-based method described in Haggard 2018 to determine the chemical-hormone pair significance (i.e., the hit-call) instead of using the ToxCast automatic data processing pipeline (tcpl). We did this because the tcpl is usually applied to all ToxCast data to standardize it with other HT data and to provide a preliminary overview, with the expectation for subsequent analyses to improve interpretation. The ANOVA-based approach was validated for this type of assay in the OECD test guideline 456 (Hecker et al. 2011; OECD 2011). Importantly, the tcpl uses the lower chemical doses to estimate a baseline response, whereas ANOVA compares responses at each dose to the control. The ANOVA-based approach is thus able to detect effects at the two lower doses, making it less prone to false-negatives, because it treats all chemical doses as test wells rather than effectively as controls. Although we did not use the tcpl method, we found a high correlation between ToxCast tcpl hit-calls for E2 and P4 increases and the ANOVA-based analysis we used (see supplemental figure 1 in Cardona and Rudel 2021). 
-Data quality flags
-Burgoon and Borgert state that we did not consider quality flags in the National Toxicology Program’s Integrated Chemical Environment (ICE) database for 37 chemicals that increase E2 and 42 chemicals that increase P4. However, after mapping the chemicals we identified as increasing E2 or P4 onto ICE data (https://ice.ntp.niehs.nih.gov/downloads/DataonICE/cHTS2021_invitrodb33_20210128.zip) and filtering for the HT-H295R assay, we instead found quality control (QC) flags for 22 chemicals (13 that increased E2, 4 that increased P4, and 5 that increased both). It is possible that Burgoon and Borgert did not filter for QC flags for chemicals in the HT-H295R assay run in CR in particular. 
-Chemicals with a QC flag do not necessarily need to be dismissed for the analysis. ICE used QC information available on the Tox21 tripod (https://tripod.nih.gov/tox21/samples). We mapped the E2-up and P4-up on this database and identified three chemicals (retinol acetate, 5-chloro-2-methyl-3(2H)-isothiazolone and dicyclohexylamine) with a caution flag that suggests the named chemical was not detected during the QC. These results may reflect activity of a different chemical that was tested but mislabeled, or some other experimental issue. For the rest of the QC flagged chemicals, typically the QC flag warns of lower than expected concentration of the test chemical in the well.  For these, low concentration is less likely to produce a detectable positive response, leading to false negatives. However, positive results for these suggest the chemical is active and are informative at least qualitatively. These chemicals may be more potently steroidogenic than we originally indicated. 
-Finally, it is important to note that ICE uses the tcpl pipeline to determine some QC criteria. The data that we used—from Haggard (2018)—relied on another approach based on ANOVA. QC from ICE may not be fully applicable for this assay.
 
+### <i>Data quality flags</i>
+Burgoon and Borgert state that we did not consider quality flags in the National Toxicology Program’s Integrated Chemical Environment (ICE) database for 37 chemicals that increase E2 and 42 chemicals that increase P4. However, after mapping the chemicals we identified as increasing E2 or P4 onto ICE data (https://ice.ntp.niehs.nih.gov/downloads/DataonICE/cHTS2021_invitrodb33_20210128.zip) and filtering for the HT-H295R assay, we instead found quality control (QC) flags for 22 chemicals (13 that increased E2, 4 that increased P4, and 5 that increased both). It is possible that Burgoon and Borgert did not filter for QC flags for chemicals in the HT-H295R assay run in CR in particular. <br>
+Chemicals with a QC flag do not necessarily need to be dismissed for the analysis. ICE used QC information available on the Tox21 tripod (https://tripod.nih.gov/tox21/samples). We mapped the E2-up and P4-up on this database and identified three chemicals (retinol acetate, 5-chloro-2-methyl-3(2H)-isothiazolone and dicyclohexylamine) with a caution flag that suggests the named chemical was not detected during the QC. These results may reflect activity of a different chemical that was tested but mislabeled, or some other experimental issue. For the rest of the QC flagged chemicals, typically the QC flag warns of lower than expected concentration of the test chemical in the well.  For these, low concentration is less likely to produce a detectable positive response, leading to false negatives. However, positive results for these suggest the chemical is active and are informative at least qualitatively. These chemicals may be more potently steroidogenic than we originally indicated. <br>
+Finally, it is important to note that ICE uses the tcpl pipeline to determine some QC criteria. The data that we used—from Haggard (2018)—relied on another approach based on ANOVA. QC from ICE may not be fully applicable for this assay.<br>
 
+### <i>The quality of the progesterone data</i>
+It is unclear why Burgoon and Borgert highlight “day-effects” only for P4 data and suggest that this is grounds for dismissing the P4 results entirely. Differences related to running plates on different days would typically apply to all measurements from those plates, and indeed, this is why DMSO control wells are included on every plate: to account for variability between measurements from different plates. Good concordance between replicates for P4, discussed above, suggest that this is not a major concern, and P4 results are even more reliable than those for E2.<br>
 
-The quality of the progesterone data
-It is unclear why Burgoon and Borgert highlight “day-effects” only for P4 data and suggest that this is grounds for dismissing the P4 results entirely. Differences related to running plates on different days would typically apply to all measurements from those plates, and indeed, this is why DMSO control wells are included on every plate: to account for variability between measurements from different plates. Good concordance between replicates for P4, discussed above, suggest that this is not a major concern, and P4 results are even more reliable than those for E2.
-Final Thoughts
-One of the authors of the critique—C. Borgert – previously asserted that synthetic estrogenic chemicals are not potent enough to be of health concern compared to natural compounds with comparable endocrine activity (Autrup et al. 2020), a viewpoint that ignores concerns raised by the Endocrine Society and others about ligand-, tissue-, and life stage-specific effects (Gore et al. 2015). The chemicals we have identified in this analysis stimulate production of endogenous hormones, which are especially potent, so this raises additional concerns about health effects. Borgert’s conflict of interest disclosure notes that he has worked for the regulated chemical industry on endocrine disruptor issues, so readers should be aware that Burgoon and Borgert’s critique may be part of a strategy to create doubt and skepticism (Michaels 2020). 
+### <i>Final Thoughts</i>
+One of the authors of the critique—C. Borgert – previously asserted that synthetic estrogenic chemicals are not potent enough to be of health concern compared to natural compounds with comparable endocrine activity (Autrup et al. 2020), a viewpoint that ignores concerns raised by the Endocrine Society and others about ligand-, tissue-, and life stage-specific effects (Gore et al. 2015). The chemicals we have identified in this analysis stimulate production of endogenous hormones, which are especially potent, so this raises additional concerns about health effects. Borgert’s conflict of interest disclosure notes that he has worked for the regulated chemical industry on endocrine disruptor issues, so readers should be aware that Burgoon and Borgert’s critique may be part of a strategy to create doubt and skepticism (Michaels 2020). <br>
 Estradiol and progesterone play a critical role in the progression of many breast cancers and likely influence other endpoints such as lactation and breast development, so it is an urgent priority to identify chemicals that may increase risk by affecting steroidogenesis. We hope our work will contribute to identifying opportunities to prevent breast cancers by understanding and reducing these exposures.
  
- 
-Figure 1: Phenothiazine replicate results before and after normalization to concurrent controls. Each color represents an experiment run on different dates and plates. In the top graph, the solid line represents the plate-specific mean (of technical duplicates) hormone concentrations after test chemical administration, and the dashed line represents the plate-specific DMSO baseline (y-intercept). In the bottom graph, the data have been normalized so that the Y-axis shows log fold-change (ln([E2]test) – ln([E2]control)). Normalizing hormone data to concurrent controls decreases experimental variability as seen by the reduced root mean squared error (RMSE) from 0.97 (top graph) to 0.16 (bottom graph).
+![alt text]((https://github.com/SilentSpringInstitute/E2upP4up_followup_Burgoon/Figure1.jpg)
+
+<i><b>Figure 1:</b> Phenothiazine replicate results before and after normalization to concurrent controls. Each color represents an experiment run on different dates and plates. In the top graph, the solid line represents the plate-specific mean (of technical duplicates) hormone concentrations after test chemical administration, and the dashed line represents the plate-specific DMSO baseline (y-intercept). In the bottom graph, the data have been normalized so that the Y-axis shows log fold-change (ln([E2]test) – ln([E2]control)). Normalizing hormone data to concurrent controls decreases experimental variability as seen by the reduced root mean squared error (RMSE) from 0.97 (top graph) to 0.16 (bottom graph).</i><br>
+
 Similar graphs for replicates of E2 and P4 data can be found in our GitHub files (https://github.com/SilentSpringInstitute/E2upP4up_followup_Burgoon) 
 
-Acknowledgements: We appreciate support from Drs. R.W. Setzer (emeritus US EPA) and K. Paul-Friedman (US EPA) in preparing this response.
-Conflicts/Funding:
+### <u><b>Acknowledgements:</u></b>
+We appreciate support from Drs. R.W. Setzer (emeritus US EPA) and K. Paul-Friedman (US EPA) in preparing this response.
+
+### <u><b>Conflicts/Funding:</u></b>
 This work was funded by the by the U.S. National Institutes of Health/National Institute of Environmental Health Sciences Breast Cancer and Environment Research Program (U01ES026130), the California Breast Cancer Research Program (awards 21UB-8012 and 21UB-8100), the Cedar Tree Foundation, and charitable gifts to the Silent Spring Institute. All authors are or have been employed at the Silent Spring Institute, a scientific research organization dedicated to studying environmental factors in women’s health. The institute is a 501(c)3 public charity funded by federal grants and contracts, foundation grants, and private donations, including from breast cancer organizations. Study funders had no role in study design; in the collection, analysis and interpretation of data; in the writing of the report; and in the decision to submit the article for publication.
-Signature block
-Ruthann A. Rudel*
-Bethsaida Cardona
-Alexandre Borrel
-Jennifer E. Kay
-Silent Spring Institute, 320 Nevada St. Newton, MA 02460
+Signature block<br>
+Ruthann A. Rudel*<br>
+Bethsaida Cardona<br>
+Alexandre Borrel<br>
+Jennifer E. Kay<br>
+Silent Spring Institute, 320 Nevada St. Newton, MA 02460<br>
 *Corresponding author, Rudel@SilentSpring.org
 
-
-
-
-
-
-# E2up P4up follow up Burgoon
-Response to Burgoon and Borgert’s (2022) Comment on “Application of an in Vitro Assay to Identify Chemicals That Increase Estradiol and Progesterone Synthesis and Are Potential Breast Cancer Risk Factors" published in EHP.<br>
- [Cardona, B., & Rudel, R. A. (2021). Application of an in vitro assay to identify chemicals that increase Estradiol and progesterone synthesis and are potential breast cancer risk factors. Environmental Health Perspectives, 129(7). https://doi.org/10.1289/EHP8608](10.1016/j.mce.2020.110927) 
-
-Directory includes:
-- SQL request for the invitro DB (invitroDB.sql)
-- DMSO control analysis (DMS_control.html)
-- Tables used for the analysis (/DATA)
