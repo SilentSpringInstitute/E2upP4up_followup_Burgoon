@@ -1,4 +1,4 @@
-# This is a comprehensive response to Burgoon and Borgert [add link] and an abbreviated response is published in EHP [citation info and link].
+# This is a comprehensive response to Burgoon and Borgert (https://ehp.niehs.nih.gov/doi/full/10.1289/EHP11083) and an abbreviated response is published in EHP (https://ehp.niehs.nih.gov/doi/10.1289/EHP11400).
 
 <br>
 
